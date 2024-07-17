@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG&display=swap');
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    font-size: 14px;
+    background-image: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    display: grid;
+    place-items: center;
+  }
+  .form_wrapper {
+    background: #fffccc;
+    width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+    z-index: 1;
+    border-top: 5px solid #f5ba1a;
+    border-radius: 3px;
+    box-shadow: #00000066 0px 3px 8px;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition: none;
+    transition: none;
+  }
+  .form_wrapper h2 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+  }
+  .form_wrapper h2.company{
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .form_wrapper .title_container {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .form_wrapper .message {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f00;
+  }
+  .form_wrapper .input_field {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form_wrapper input[type=submit] {
+    background: #f5ba1a;
+    height: 35px;
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1em;
+    transition: all 0.2s ease-in-out;
+  }
+  .form_wrapper input[type=submit]:hover {
+    background: #e1a70a;
+    letter-spacing: 1px;
+  }
+  .form_wrapper input[type=submit]:focus {
+    background: #e1a70a;
+  }
+  
+  @media (max-width: 600px) {
+    .form_wrapper .col_half {
+      width: 100%;
+      float: none;
+    }
+  
+    .bottom_row .col_half {
+      width: 50%;
+      float: left;
+    }
+  
+    .form_container .row .col_half.last {
+      border-left: none;
+    }
+  
+    .remember_me {
+      padding-bottom: 20px;
+    }
+  }
+    </style>
+    <title>User Already Registered</title>
+</head>
+<body>
+    <div class="form_wrapper">
+        <div class="title_container">
+            <h2 class="company">Blogit</h2>
+            <h2>User Already Registered</h2>
+        </div>
+        <div class="message">
+            You are already registered with us.
+        </div>
+        <form method="get" action="/">
+            <input type="submit" value="Go Back to Registration" />
+        </form>
+    </div>
+</body>
+</html>
